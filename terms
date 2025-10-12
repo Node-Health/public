@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; }
+    h1 { border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Terms & Conditions</h1>
+  <p>Last updated: October 2025</p>
+  <p>Welcome to our Terms and Conditions page...</p>
+</body>
+</html>
