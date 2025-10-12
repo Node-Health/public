@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Häufig gestellte Fragen - Node Health</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set default font to Inter */
+        html { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white min-h-screen">
+
+    <!-- Main content container: centered, max width 4XL, responsive padding -->
+    <div class="max-w-3xl mx-auto p-6 md:p-10">
+
+        <h1 class="text-3xl font-extrabold text-gray-900 mb-8 border-b pb-3 text-center">
+            Häufig gestellte Fragen (FAQ)
+        </h1>
+
+        <div id="accordion-container" class="space-y-4">
+
+            <!-- FAQ Item 1: Speicherung -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                <button 
+                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
+                    onclick="toggleAccordion(1)"
+                    aria-expanded="false" 
+                    aria-controls="content-1"
+                >
+                    Wie genau werden meine Daten gespeichert?
+                    <svg id="icon-1" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="content-1" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
+                    <p>Wir speichern alle Daten <strong>direkt auf deinem Smartphone</strong>. Sie verlassen nie dein Smartphone. Mit der Löschung der App löschst du auch somit deine Daten. Wir speichern keine Daten auf unseren Servern.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2: Export -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                <button 
+                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
+                    onclick="toggleAccordion(2)"
+                    aria-expanded="false" 
+                    aria-controls="content-2"
+                >
+                    Kann ich meine Daten exportieren?
+                    <svg id="icon-2" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="content-2" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
+                    <p>Ja, du kannst jederzeit deine Daten direkt in der App exportieren, um sie z.B. für dich aufzubewahren oder auf ein neues Handy zu übertragen.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3: Kosten -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                <button 
+                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
+                    onclick="toggleAccordion(3)"
+                    aria-expanded="false" 
+                    aria-controls="content-3"
+                >
+                    Wie viel kostet die Nutzung der App?
+                    <svg id="icon-3" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="content-3" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
+                    <p>Die Node Health App ist <strong>komplett kostenlos</strong> im iOS App Store erhältlich.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4: Zielgruppe -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                <button 
+                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
+                    onclick="toggleAccordion(4)"
+                    aria-expanded="false" 
+                    aria-controls="content-4"
+                >
+                    Für wen ist die App geeignet?
+                    <svg id="icon-4" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="content-4" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
+                    <p>Die App ist ideal für dich, wenn du deine Gesundheit proaktiv verwalten möchtest. Sie ist ideal für <strong>datenbewusste Menschen</strong>, die ihre Biomarker nicht nur verstehen, sondern auch verfolgen und in den optimalen Bereich bringen wollen. Die App kann genutzt werden, um dich auf Arztbesuche vorzubereiten und einen datengestützten Dialog mit medizinischem Fachpersonal zu führen.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 5: Medizinische Empfehlungen -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                <button 
+                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
+                    onclick="toggleAccordion(5)"
+                    aria-expanded="false" 
+                    aria-controls="content-5"
+                >
+                    Gibt die App medizinische Empfehlungen?
+                    <svg id="icon-5" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="content-5" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
+                    <p>Aktuell gibt unsere App <strong>keine spezifischen gesundheitlichen oder medizinischen Empfehlungen</strong>. Wir legen größten Wert auf die Genauigkeit und Relevanz unserer Dienste und sind aufgrund der sensiblen Natur gesundheitsbezogener Ratschläge in diesem Bereich sehr vorsichtig.</p>
+                    <p class="mt-2">Wir stellen dir jedoch grundlegende Informationen zur Verfügung, die dir aufzeigen, was getan werden kann, um deine Werte im Normbereich zu halten. Beachte bitte, dass es sich dabei um <strong>öffentlich zugängliche Informationen</strong> handelt, die nicht auf deinen individuellen Fall zugeschnitten sind. Zudem ist es wichtig zu wissen, dass alle von der App bereitgestellten Informationen <strong>nicht als medizinischer Ratschlag</strong> zu verstehen sind. Wir empfehlen dir stets, medizinisches Fachpersonal für eine personalisierte medizinische Beratung zu konsultieren, bevor du konkrete Schritte unternimmst.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+        // JavaScript for Accordion functionality
+        function toggleAccordion(id) {
+            const content = document.getElementById('content-' + id);
+            const icon = document.getElementById('icon-' + id);
+            const header = document.querySelector(`.accordion-header[onclick="toggleAccordion(${id})"]`);
+
+            const isExpanded = header.getAttribute('aria-expanded') === 'true';
+
+            // Close all other open sections
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item.id !== 'content-' + id) {
+                    item.classList.add('hidden');
+                }
+            });
+            document.querySelectorAll('.accordion-header').forEach(item => {
+                 if (item !== header) {
+                    item.setAttribute('aria-expanded', 'false');
+                }
+            });
+            document.querySelectorAll('[id^="icon-"]').forEach(item => {
+                if (item.id !== 'icon-' + id) {
+                    item.classList.remove('rotate-180');
+                }
+            });
+
+
+            // Toggle the clicked section
+            if (isExpanded) {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+                header.setAttribute('aria-expanded', 'false');
+            } else {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+                header.setAttribute('aria-expanded', 'true');
+            }
+        }
+    </script>
+
+</body>
+</html>
