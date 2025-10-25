@@ -1,155 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions - Node Health</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Set default font to Inter */
-        html { font-family: 'Inter', sans-serif; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freque</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { font-family: 'Inter', sans-serif; }
+    </style>
 
-    <link rel="icon" type="image/png" href="/favicon-light.png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/png" href="/favicon-dark.png">
-    
+    <link rel="icon" type="image/png" href="/favicon-light.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="/favicon-dark.png">
 </head>
 <body class="bg-white min-h-screen">
 
-        <div class="max-w-3xl mx-auto p-6 md:p-10">
+    <div class="max-w-3xl mx-auto p-6 md:p-10">
 
-        <div class="text-right mb-8">
-            <a href="https://legal.nodehealth.de/faq/de" class="text-blue-600 hover:text-blue-800 underline font-medium">German</a>
-            <span class="text-gray-400">|</span>
-            <span class="text-gray-800 font-bold">English</span>
-        </div>
+        <div class="text-right mb-8">
+            <a href="https://legal.nodehealth.de/faq-de" class="text-blue-600 hover:text-blue-800 underline font-medium">Deutsch</a>
+            <span class="text-gray-400">|</span>
+            <span class="text-gray-800 font-bold">English</span>
+        </div>
 
-        <h1 class="text-3xl font-extrabold text-gray-900 mb-8 border-b pb-3 text-center">
-            Frequently Asked Questions
-        </h1>
+        <h1 class="text-3xl font-extrabold text-gray-900 mb-8 border-b pb-3 text-center">
+            Frequently Asked Questions (FAQ)
+        </h1>
 
-        <div id="accordion-container" class="space-y-4">
+        <div id="accordion-container" class="space-y-4">
 
-                        <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
-                <button 
-                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
-                    onclick="toggleAccordion(1)"
-                    aria-expanded="false" 
-                    aria-controls="content-1"
-                >
-                    How exactly is my data stored?
-                    <svg id="icon-1" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-                <div id="content-1" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
-                    <p>We store all data <strong>directly on your smartphone</strong>. It never leaves your smartphone. By deleting the app, you also delete your data. We do not store any data on our servers.</p>
-                </div>
-            </div>
-
-                        <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
-                <button 
-                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
-                    onclick="toggleAccordion(2)"
-                    aria-expanded="false" 
-                    aria-controls="content-2"
-                >
-                    Can I export my data?
-                    <svg id="icon-2" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-                <div id="content-2" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
-                    <p>Yes, you can export your data directly in the app at any time, for example, to keep it for yourself or to transfer it to a new phone.</p>
-                </div>
-            </div>
-
-                        <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
-                <button 
-                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
-                    onclick="toggleAccordion(3)"
-                    aria-expanded="false" 
-                    aria-controls="content-3"
-                >
-                    How much does it cost to use the app?
-                    <svg id="icon-3" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-                <div id="content-3" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
-                    <p>The Node Health App is <strong>completely free</strong> and available in the iOS App Store.</p>
-                </div>
-            </div>
-
-                        <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
-                <button 
-                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
-                    onclick="toggleAccordion(4)"
-                    aria-expanded="false" 
-                    aria-controls="content-4"
-                >
-                    Who is the app suitable for?
-                    <svg id="icon-4" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-                <div id="content-4" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
-                    <p>The app is ideal for you if you want to proactively manage your health. It is ideal for <strong>data-conscious people</strong> who not only want to understand their biomarkers but also track them and bring them into the optimal range. The app can be used to prepare for doctor's visits and to conduct a data-driven dialogue with medical professionals.</p>
-                </div>
-            </div>
-            
-                        <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
-                <button 
-                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
-                    onclick="toggleAccordion(5)"
-                    aria-expanded="false" 
-                    aria-controls="content-5"
-                >
-                    Does the app provide medical recommendations?
-                    <svg id="icon-5" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-                <div id="content-5" class="accordion-content hidden px-4 py-4 md:px-5 md:py-5 text-gray-700 border-t border-gray-200">
-                    <p>Currently, our app provides <strong>no specific health or medical recommendations</strong>. We place the highest value on the accuracy and relevance of our services and are very cautious in this area due to the sensitive nature of health-related advice.</p>
-                    <p class="mt-2">However, we do provide you with basic information that shows you what can be done to keep your values within the normal range. Please note that this is <strong>publicly accessible information</strong> that is not tailored to your individual case. Furthermore, it is important to know that all information provided by the app is <strong>not to be understood as medical advice</strong>. We always recommend consulting a medical professional for personalized medical advice before taking specific steps.</p>
-                </div>
-            </div>
-            
-        </div>
-        
-    </div>
-
-    <script>
-        // JavaScript for Accordion functionality
-        function toggleAccordion(id) {
-            const content = document.getElementById('content-' + id);
-            const icon = document.getElementById('icon-' + id);
-            const header = document.querySelector(`.accordion-header[onclick="toggleAccordion(${id})"]`);
-
-            const isExpanded = header.getAttribute('aria-expanded') === 'true';
-
-            // Close all other open sections
-            document.querySelectorAll('.accordion-content').forEach(item => {
-                if (item.id !== 'content-' + id) {
-                    item.classList.add('hidden');
-                }
-            });
-            document.querySelectorAll('.accordion-header').forEach(item => {
-                 if (item !== header) {
-                    item.setAttribute('aria-expanded', 'false');
-                }
-            });
-            document.querySelectorAll('[id^="icon-"]').forEach(item => {
-                if (item.id !== 'icon-' + id) {
-                    item.classList.remove('rotate-180');
-                }
-            });
-
-
-            // Toggle the clicked section
-            if (isExpanded) {
-                content.classList.add('hidden');
-                icon.classList.remove('rotate-180');
-                header.setAttribute('aria-expanded', 'false');
-            } else {
-                content.classList.remove('hidden');
-                icon.classList.add('rotate-180');
-                header.setAttribute('aria-expanded', 'true');
-            }
-        }
-    </script>
-
-</body>
-</html>
+            <!-- FAQ Item 1: Data Storage -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                <button 
+                    class="accordion-header w-full flex justify-between items-center p-4 md:p-5 text-lg font-semibold text-left text-gray-900 hover:bg-gray-100 transition duration-150"
+                    onclick="toggleAccordion(1)"
+                    aria-expanded="false" 
+                    aria-controls="content-1"
+                >
+                    How exactly is my data stored?
+                    <svg id="icon-1" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" st
