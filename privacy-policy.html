@@ -46,8 +46,7 @@
         Data Protection Officer
     </h2>
     <p class="text-gray-700 mb-4">
-        We have appointed a Data Protection Officer for our company.
-        You can contact them as follows:
+        We have appointed a Data Protection Officer for our company. You can contact them as follows:
     </p>
     <address class="not-italic bg-blue-50 p-4 rounded-lg border border-blue-200 text-gray-800">
         <strong class="text-lg font-bold">legal.solutions GmbH</strong><br>
@@ -62,115 +61,153 @@
 
     <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">2. Principles of Data Processing and Categories of Data</h2>
 
-    <h3 class="text-xl font-semibold text-gray-800 mt-4 mb-2">2.1. Local Storage and Offline Operation</h3>
+    <h3 class="text-xl font-semibold text-gray-800 mt-4 mb-2">2.1. Local Storage and Device-Based Processing</h3>
     <p class="text-gray-700 mb-4">
-      The app is designed so that your data is generally processed and stored exclusively locally on your device. The core functions of the app operate completely offline, without transmitting your data to external servers.
+      The app is designed so that your data is generally processed and stored locally on your device. Core functionalities operate directly on your iPhone or iPad.
+      Certain Premium features require secure processing via Google Cloud infrastructure, as described below.
     </p>
 
     <p class="text-gray-700 mb-2"><strong>Locally stored data categories:</strong></p>
     <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700 p-4 rounded-lg bg-gray-50 border">
-      <li>Basic personal data (optional, e.g., name, age, gender)</li>
+      <li>Basic profile data (e.g., name, age, gender, smoking status)</li>
       <li>Manually entered health data and biomarkers</li>
-      <li>Extracted biomarkers obtained from PDF or photo uploads</li>
+      <li>Extracted laboratory values from PDF or photo uploads</li>
+      <li>AI-generated analyses and evaluations</li>
     </ul>
 
-    <p class="text-gray-700 mt-4"><strong>Not stored:</strong> Uploaded PDF files or photos are processed only temporarily in memory ("in-memory") and are not stored persistently.</p>
+    <p class="text-gray-700 mt-4">
+      Health-related data constitute special categories of personal data within the meaning of Art. 9 GDPR.
+      All such data remain stored locally on your device until you delete them or uninstall the app.
+    </p>
 
-    <p class="text-gray-700 mt-4"><strong>No tracking, no advertising, no behavioral profiles:</strong> The app does not use tracking technologies, third-party analytics tools, nor does it create advertising or behavioral profiles.</p>
+    <p class="text-gray-700 mt-4">
+      <strong>No tracking, no advertising, no behavioral profiles:</strong>
+      The app does not use tracking technologies, third-party analytics tools, advertising technologies, or behavioral profiling.
+    </p>
 
     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">2.2. App Analytics and Crash Reports (Apple — optional)</h3>
     <p class="text-gray-700 mb-4">
-      If you have consented in the iOS/iPadOS system settings (Settings → Privacy &amp; Security → Analytics &amp; Improvements), Apple collects pseudonymized usage data and crash reports.
-      We receive these data only from Apple and only if you have consented.
+      If you have enabled device analytics in your iOS settings (Settings → Privacy &amp; Security → Analytics &amp; Improvements),
+      Apple may collect pseudonymized diagnostic and crash data.
+      We may receive aggregated technical reports from Apple to improve stability.
     </p>
-    <p class="text-gray-700 mb-2"><strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in the technical stability of the app).</p>
-    <p class="text-gray-700"><strong>Your control:</strong> You can disable this transmission at any time in the system settings.</p>
+    <p class="text-gray-700 mb-2"><strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in ensuring technical stability).</p>
+    <p class="text-gray-700"><strong>Your control:</strong> You can disable this transmission at any time in your system settings.</p>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">3. Data Processing for the Laboratory Data Analysis Function</h2>
+    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">3. Data Processing for Laboratory Data and AI Analysis</h2>
     <p class="text-gray-700 mb-4">
-      The app allows you to automatically extract biomarkers from PDF documents or photos. In doing so, health data within the meaning of Art. 9(1) GDPR are processed.
+      The app allows you to extract biomarkers from PDF documents or photos and to generate AI-supported analyses.
+      In doing so, health data within the meaning of Art. 9(1) GDPR are processed.
     </p>
 
-    <h3 class="text-xl font-semibold text-gray-800 mt-4 mb-2">3.1. Legal Basis: Consent</h3>
+    <h3 class="text-xl font-semibold text-gray-800 mt-4 mb-2">3.1. Legal Basis: Explicit Consent</h3>
     <p class="text-gray-700 mb-4">
-      The processing of your health data is carried out exclusively on the basis of your explicit consent (Art. 9(2)(a) in conjunction with Art. 6(1)(a) GDPR). Your consent is obtained prior to each upload.
+      Processing of health data is carried out exclusively on the basis of your explicit consent (Art. 9(2)(a) in conjunction with Art. 6(1)(a) GDPR).
+      Consent is obtained prior to using AI-supported features.
     </p>
-    <p class="text-gray-700"><strong>Withdrawal:</strong> You may withdraw your consent at any time for the future by discontinuing use of the feature or uninstalling the app. Withdrawal can also be performed within the app by not confirming the processing again.</p>
+    <p class="text-gray-700">
+      <strong>Withdrawal:</strong> You may withdraw your consent at any time pursuant to Art. 7(3) GDPR with effect for the future by discontinuing use of the feature and deleting your data.
+      Withdrawal does not affect the lawfulness of processing carried out prior to withdrawal.
+    </p>
 
-    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.2. Technical Procedure and Technologies Used</h3>
+    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.2. Technical Processing Structure</h3>
     <p class="text-gray-700 mb-4">
-      For privacy-compliant processing, we use a combination of on-device processing and minimal, pseudonymized external processing. All uploaded files are processed only temporarily in memory and are not stored.
+      Uploaded documents are first processed locally on your device for text extraction.
+      For AI-supported analysis, relevant data are transmitted to Google AI services hosted on Google Cloud infrastructure.
     </p>
 
-    <p class="text-gray-700 mb-2"><strong>Process (brief):</strong></p>
-    <ol class="list-decimal list-inside ml-4 space-y-2 text-gray-700 p-4 rounded-lg bg-gray-50 border">
-      <li><strong>Text extraction (OCR)</strong> — Apple Vision Framework → fully on-device, no transfer to Apple servers.</li>
-      <li><strong>Primary extraction (Apple Intelligence)</strong> — identification of simple values like date, lab name, or basic biomarkers → also 100% on-device.</li>
-      <li><strong>Biomarker matching (Gemini)</strong> — only values that cannot be unambiguously recognized locally are pseudonymized and transmitted to Gemini.</li>
-    </ol>
-
-    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.3. External Processing by Google Gemini</h3>
     <p class="text-gray-700 mb-4">
-      <strong>Recipient:</strong> Google Ireland Limited (Gemini), Google Building Gordon House, Barrow Street, Dublin 4, Ireland.
+      We operate our own backend which communicates with Google solely for the purpose of performing the requested analysis.
+      The transmitted data are processed temporarily and are not used for model training.
+      Google does not use the data for its own purposes.
     </p>
-    <p class="text-gray-700 mb-2"><strong>Role:</strong> Google acts as a processor under Art. 28 GDPR and processes the data exclusively to perform the biomarker-related matching function and not for its own purposes.</p>
-    <p class="text-gray-700 mb-2"><strong>Contractual safeguards:</strong> We have concluded the "Google Cloud Data Processing and Security Terms" with Google, including:</p>
-    <ul class="list-disc list-inside ml-4 text-gray-700 p-4 rounded-lg bg-gray-50 border">
-      <li>Processor obligations under Art. 28 GDPR</li>
-      <li>EU Standard Contractual Clauses (SCCs)</li>
-      <li>Technical and organizational measures</li>
-      <li>Regulations on subprocessors</li>
-    </ul>
-    <p class="text-gray-700 mt-4"><strong>Processing location:</strong> The processing region is "europe-west3"; the servers used are located in Germany.</p>
-    <p class="text-gray-700 mb-4"><strong>Possible third-country access:</strong> Due to the global corporate structure, access from third countries (notably the USA) cannot be completely ruled out. In such cases the Standard Contractual Clauses (SCCs) apply.</p>
 
-    <p class="text-gray-700 mb-2"><strong>Data transmitted:</strong></p>
-    <ul class="list-disc list-inside ml-4 text-gray-700 p-4 rounded-lg bg-gray-50 border">
-      <li>Biomarker name (e.g., "Vitamin D")</li>
-      <li>Measurement value (e.g., "45.2")</li>
-      <li>Unit (e.g., "ng/mL")</li>
-    </ul>
-    <p class="text-gray-700 mt-3"><strong>Note:</strong> All other content from the PDF/photo is not transmitted.</p>
-    <p class="text-gray-700 mt-3"><strong>Deletion:</strong> Data transmitted to Google are deleted immediately after the matching process is completed and are not stored permanently.</p>
+    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.3. External Processing by Google</h3>
+    <p class="text-gray-700 mb-2">
+      <strong>Recipient:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland.
+    </p>
+    <p class="text-gray-700 mb-2">
+      <strong>Role:</strong> Google acts as a processor pursuant to Art. 28 GDPR.
+    </p>
+    <p class="text-gray-700 mb-4">
+      We have concluded a Data Processing Agreement including EU Standard Contractual Clauses where required.
+      Due to the global corporate structure of Google, access from third countries (including the United States) cannot be entirely excluded.
+    </p>
 
-    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.4. No Automated Decision-Making</h3>
+    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.4. Backend Logging and Technical Error Analysis</h3>
+    <p class="text-gray-700 mb-4">
+      To ensure technical stability and resolve errors (e.g., failed uploads or matching issues),
+      we maintain limited backend logs.
+      These logs may include technical metadata, error messages, and limited portions of uploaded data where necessary to identify the cause of failure.
+    </p>
+    <p class="text-gray-700 mb-4">
+      Logs are used exclusively for debugging and troubleshooting purposes and are retained only as long as necessary.
+    </p>
+    <p class="text-gray-700 mb-4">
+      <strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in ensuring technical stability and security), and Art. 9(2)(a) GDPR where health data are affected.
+    </p>
+
+    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.5. No Automated Decision-Making</h3>
     <p class="text-gray-700">
       There is no automated decision-making or profiling within the meaning of Art. 22 GDPR.
+      AI-generated analyses are informational only and do not produce legally binding effects.
     </p>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">4. Data Export</h2>
-    <p class="text-gray-700">
-      You can manually export your locally stored data at any time. The export is performed solely by your initiative and under your full control.
+    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">4. Subscription Services (Apple App Store)</h2>
+    <p class="text-gray-700 mb-4">
+      Premium subscriptions are offered exclusively via the Apple App Store.
+      Payments are processed solely by Apple.
+      We do not receive or store credit card data, banking details, or Apple ID credentials.
+    </p>
+    <p class="text-gray-700 mb-4">
+      Subscription validation is performed locally on your device using Apple’s receipt validation mechanisms.
+    </p>
+    <p class="text-gray-700 mb-4">
+      <strong>Legal basis:</strong> Art. 6(1)(b) GDPR (performance of contract).
     </p>
 
     <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">5. Deletion of Data</h2>
     <p class="text-gray-700">
-      Uninstalling the app will remove all locally stored data completely and irretrievably — unless you have previously created a backup yourself.
+      You may delete your data at any time within the app.
+      Uninstalling the app removes all locally stored data completely and irretrievably, unless you have created your own backup.
     </p>
 
     <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">6. Your Rights</h2>
     <p class="text-gray-700 mb-4">
-      Under the GDPR you have the following rights:
+      As a user, you have the following rights regarding personal data processing:
     </p>
     <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700 p-4 rounded-lg bg-gray-50 border">
-      <li>Access (Art. 15)</li>
-      <li>Rectification (Art. 16)</li>
-      <li>Erasure (Art. 17)</li>
-      <li>Restriction of processing (Art. 18)</li>
-      <li>Data portability (Art. 20)</li>
-      <li>Objection (Art. 21)</li>
+      <li>Right of access (Art. 15 GDPR)</li>
+      <li>Right to rectification (Art. 16 GDPR)</li>
+      <li>Right to erasure / restriction of processing (Art. 17, 18 GDPR)</li>
+      <li>Right to object (Art. 21 GDPR)</li>
+      <li>Right to withdraw consent (Art. 7(3) GDPR)</li>
+      <li>Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)</li>
     </ul>
-    <p class="text-gray-700 mt-4">To exercise your rights, contact us at: <a href="mailto:legal@nodehealth.de" class="text-blue-600 hover:text-blue-800 underline">legal@nodehealth.de</a></p>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">7. Changes to this Privacy Policy</h2>
-    <p class="text-gray-700 mb-4">
-      We reserve the right to adapt this privacy policy. The latest version can be viewed within the app.
-    </p>
-    <p class="text-gray-700 mb-4">
-      In the event of material changes, in particular new data transfers, we will inform you in advance and — if required — obtain your renewed consent. If you do not agree to the amended privacy policy, you will not be able to continue using the app. Upon uninstallation, all local data will be deleted in accordance with Section 5.
+    <p class="text-gray-700 mt-4">
+      If you wish to exercise your rights, please contact the controller listed above.
     </p>
 
-    <p class="text-gray-600 mt-6">Berlin, January 2026 (App Version 2.1)</p>
+    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">7. Competent Supervisory Authority</h2>
+    <address class="not-italic bg-blue-50 p-4 rounded-lg border border-blue-200 text-gray-800">
+      Berlin Commissioner for Data Protection and Freedom of Information<br>
+      Alt-Moabit 59–61<br>
+      10555 Berlin<br>
+      Germany<br>
+      Email: <a href="mailto:mailbox@datenschutz-berlin.de" class="text-blue-600 hover:text-blue-800 underline">mailbox@datenschutz-berlin.de</a>
+    </address>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">8. Changes to this Privacy Policy</h2>
+    <p class="text-gray-700 mb-4">
+      We reserve the right to adapt this privacy policy.
+      The latest version can be viewed within the app.
+    </p>
+    <p class="text-gray-700 mb-4">
+      In the event of material changes, we will inform you in advance and — if required — obtain renewed consent.
+    </p>
+
+    <p class="text-gray-600 mt-6">Berlin, March 2026 (App Version 2.1)</p>
 
   </div>
 
