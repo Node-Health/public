@@ -93,8 +93,7 @@
     </p>
     <p class="text-gray-700 mb-2"><strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in ensuring technical stability).</p>
     <p class="text-gray-700"><strong>Your control:</strong> You can disable this transmission at any time in your system settings.</p>
-
-    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">3. Data Processing for Laboratory Data and AI Analysis</h2>
+   <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">3. Data Processing for Laboratory Data and AI Analysis</h2>
     <p class="text-gray-700 mb-4">
       The app allows you to extract biomarkers from PDF documents or photos and to generate AI-supported analyses.
       In doing so, health data within the meaning of Art. 9(1) GDPR are processed.
@@ -106,20 +105,29 @@
       Consent is obtained prior to using AI-supported features.
     </p>
     <p class="text-gray-700">
-      <strong>Withdrawal:</strong> You may withdraw your consent at any time pursuant to Art. 7(3) GDPR with effect for the future by discontinuing use of the feature and deleting your data.
+      <strong>Withdrawal:</strong> You may withdraw your consent at any time pursuant to Art. 7(3) GDPR with effect for the future by discontinuing use of the AI features.
       Withdrawal does not affect the lawfulness of processing carried out prior to withdrawal.
     </p>
 
     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.2. Technical Processing Structure</h3>
     <p class="text-gray-700 mb-4">
       Uploaded documents are first processed locally on your device for text extraction.
-      For AI-supported analysis, relevant data are transmitted to Google AI services hosted on Google Cloud infrastructure.
+      For AI-supported analysis, the extracted text data are transmitted to Google AI services
+      hosted on Google Cloud infrastructure.
     </p>
 
     <p class="text-gray-700 mb-4">
-      We operate our own backend which communicates with Google solely for the purpose of performing the requested analysis.
-      The transmitted data are processed temporarily and are not used for model training.
-      Google does not use the data for its own purposes.
+      The sole purpose of using Google AI is to match your biomarkers and measurement units
+      against our internal reference database — for example, to correctly interpret laboratory
+      values from your blood test results. No interpretation, diagnosis, or medical advice is generated.
+    </p>
+
+    <p class="text-gray-700 mb-4">
+      We operate our own backend which communicates with Google solely for the purpose of
+      performing this matching analysis. The transmitted data are processed temporarily for
+      this purpose only and are automatically deleted after processing is complete.
+      <strong>No uploaded files, images, or documents are retained on our servers or by Google.</strong>
+      The data are not used for AI model training, and Google does not use the data for its own purposes.
     </p>
 
     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.3. External Processing by Google</h3>
@@ -131,8 +139,18 @@
     </p>
     <p class="text-gray-700 mb-4">
       We have concluded a Data Processing Agreement including EU Standard Contractual Clauses where required.
-      Due to the global corporate structure of Google, access from third countries (including the United States) cannot be entirely excluded.
+      Due to the global corporate structure of Google, access from third countries (including the United States)
+      cannot be entirely excluded.
     </p>
+
+    <p class="text-gray-700 mb-2"><strong>What Google does not do with your data:</strong></p>
+    <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700 p-4 rounded-lg bg-gray-50 border mb-4">
+      <li>Retain uploaded files, images, or documents beyond temporary processing</li>
+      <li>Use your data for marketing or advertising purposes</li>
+      <li>Use your data for analytics or behavioral profiling</li>
+      <li>Share your data with third parties for any purpose</li>
+      <li>Use your data to train or improve AI models</li>
+    </ul>
 
     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.4. Backend Logging and Technical Error Analysis</h3>
     <p class="text-gray-700 mb-4">
@@ -141,18 +159,28 @@
       These logs may include technical metadata, error messages, and limited portions of uploaded data where necessary to identify the cause of failure.
     </p>
     <p class="text-gray-700 mb-4">
-      Logs are used exclusively for debugging and troubleshooting purposes and are retained only as long as necessary.
+      Logs are used exclusively for debugging and troubleshooting purposes and are automatically deleted after <strong>48 hours</strong>.
+      Where error logs temporarily contain excerpts of uploaded data, this occurs solely for the purpose of identifying technical failures
+      and is subject to the same 48-hour deletion policy.
     </p>
     <p class="text-gray-700 mb-4">
       <strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in ensuring technical stability and security), and Art. 9(2)(a) GDPR where health data are affected.
     </p>
 
     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.5. No Automated Decision-Making</h3>
-    <p class="text-gray-700">
+    <p class="text-gray-700 mb-4">
       There is no automated decision-making or profiling within the meaning of Art. 22 GDPR.
       AI-generated analyses are informational only and do not produce legally binding effects.
     </p>
 
+    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">3.6. Strictly Opt-In — No Data Transmitted Without Your Consent</h3>
+    <p class="text-gray-700 mb-4">
+      The use of Google AI for laboratory analysis is strictly opt-in.
+      No data is transmitted to Google or our backend unless you have explicitly given your consent
+      prior to using this feature. You will be clearly informed before any transmission occurs
+      and may decline at any time without affecting other app functionality.
+    </p>
+      
     <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">4. Subscription Services (Apple App Store)</h2>
     <p class="text-gray-700 mb-4">
       Premium subscriptions are offered exclusively via the Apple App Store.
@@ -207,7 +235,7 @@
       In the event of material changes, we will inform you in advance and — if required — obtain renewed consent.
     </p>
 
-    <p class="text-gray-600 mt-6">Berlin, March 2026 (App Version 2.1)</p>
+    <p class="text-gray-600 mt-6">Berlin, April 2026 (App Version 2.2)</p>
 
   </div>
 
